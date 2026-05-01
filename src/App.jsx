@@ -10,7 +10,7 @@ import React, {
   useState,
 } from 'react'
 import {
-  BrowserRouter,
+  HashRouter,
   Link,
   NavLink,
   Navigate,
@@ -415,7 +415,7 @@ function useData() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AuthProvider>
         <DataProvider>
           <style>{styles}</style>
@@ -426,7 +426,7 @@ function App() {
           </SmoothShell>
         </DataProvider>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
